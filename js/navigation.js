@@ -13,19 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     link.classList.add('active');
                 }
             });
-
-            // Fix relative links to absolute links
-            navLinks.forEach(link => {
-                let href = link.getAttribute('href');
-                if (href && !href.startsWith('http') && !href.startsWith('/')) {
-                    // If link is not external and not already absolute, make it absolute
-                    if (href.startsWith('projects/')) {
-                        link.setAttribute('href', '/' + href);
-                    } else {
-                        link.setAttribute('href', '/' + href.replace(/^\/?/, ''));
-                    }
-                }
-            });
         })
         .catch(error => {
             console.error('Error loading navigation:', error);
