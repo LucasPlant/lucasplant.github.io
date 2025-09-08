@@ -16,13 +16,23 @@
     <div id="navigation-placeholder"></div>
     <main class="container py-5">
         <h1>Controls Sim Project</h1>
-        <p>This page showcases an interactive controls simulation web app. Explore the tool below:</p>
+        <p>Controls Sim is a web-based application to simulate and visualize several dynamic systems and controllers. I created this as an educational tool for exploring control systems and to experiment with simulation and control methods.</p>
+
+        <p> The website is built with Dash, a python library for turing Plotly based plots into web pages. It is hosted using hugging face. The main simulation is performed using fixed step Runge-Kutta 4th order. The current support controllers are SISO PID and MIMO Full state Feedback with Pole placement. More controllers and state estimators coming soon.</p>
+
+        <p>This project is a continuous work in progress and some of the tasks I am hoping to tackle in the near future are outlined in the GITHUB. Some key tasks I am hoping to complete soon is the addition of noise to my system and Kalman filter. Additionally I want to add some more interesting non linear systems such as spacecraft dynamics, an inverted pendulum, and a drone.</p>
+
+        <p>Code is maintained here: <a href="https://github.com/LucasPlant/ControlsSim" target="_blank"><strong>GitHub Repository</strong></a></p>
+
+        <p>Link to the tool in browser: <a href="https://lucasplant-controlsim.hf.space" target="_blank"><strong>Controls Sim</strong></a></p>
+
+        <p>Explore the tool below:</p>
         <div class="ratio ratio-16x9" style="max-width: 850px;">
             <iframe
                 src="https://lucasplant-controlsim.hf.space"
                 frameborder="0"
                 width="850"
-                height="450"
+                height="800"
                 allowfullscreen
             ></iframe>
         </div>
