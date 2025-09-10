@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computational Electrodynamics Project - Lucas Plant</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation placeholder for JS injection -->
+    <div id="navigation-placeholder"></div>
+    <main class="container py-5">
+        <h1>Computational Electrodynamics Project</h1>
+        <p>This was my final project for ECE 4350 Electromagnetic Applications. It is a report explaining the fundementals of numerical methods used for analysis of electromagnetic propagation. In this report I simulate an example waveguide using the open source FDTD (Finite Difference Time Domain) simulator MEEP.
+        </p>
+        <p>Afterwards I provide a detailed mathematical explanation about the stability of spacial discretization techniques. To accomplish this, I analyze the stability of the simulated system using a digital linear state space approximation of the physical system and analyze the positions of the poles in the Z plane.</p>
+
+        <div class="mb-4">
+            <h5>FDTD with naive (unstable) discretization</h5>
+            <p>This animation shows how the simple discretization approach leads to instability in the simulation.</p>
+            <img src="/projects/euler.gif" alt="FDTD Simulation" class="img-fluid rounded border" style="max-width: 600px;">
+        </div>
+
+        <div class="mb-4">
+            <h5>FDTD with Yee discretization</h5>
+            <p>This animation shows how the Yee approach leads to a stable system.</p>
+            <img src="/projects/yee.gif" alt="Yee" class="img-fluid rounded border" style="max-width: 600px;">
+        </div>
+
+        <div class="mb-4">
+            <h5>Pole locations for naive and Yee discretization</h5>
+            <p>The pole placements show us that the standard discretization has poles outside the unit circle making it unstable. In contrast, the Yee discretization has poles on the unit circle, indicating a marginally stable system.</p>
+            <img src="/projects/poles.png" alt="Pole Locations" class="img-fluid rounded border" style="max-width: 600px;">
+        </div>
+
+        <div class="mb-4">
+            <h5>3. Project Report PDF</h5>
+            <p>The full project report details the mathematical background, implementation, and results of the computational electrodynamics simulations.</p>
+            <main class="container">
+                <h1>Full Report</h1>
+                <iframe src="/projects/ECE4350FinalLucasPlant.pdf" width="100%" height="800px" style="border:none;">
+                    This browser does not support PDFs. Please download the PDF to view it: <a href="/projects/ECE4350FinalLucasPlant.pdf">Download Report</a>.
+                </iframe>
+                <p><a href="LucasPlantResumeAug2025.pdf" download>Download Resume as PDF</a></p>
+            </main>
+        </div>
+    </main>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Navigation Script -->
+    <script src="../js/navigation.js"></script>
+</body>
+</html>
