@@ -23,19 +23,40 @@
                     <div class="card-body">
                         <h5 class="card-title">Undergraduate Research</h5>
                         <h6 class="card-subtitle mb-2 text-muted"><a href="https://dcsl.gatech.edu/" target="_blank" rel="noopener">Dynamics and Control Systems Laboratory</a></h6>
-                        <p class="card-text">I started as an Undergraduate Research Assistant in the Dynamics and Control Systems Laboratory at Georgia Tech in Fall of 2024. DCSL is focused on testing Robotic Algorithms and Control Systems in a simulated space like environment.</p>
-                        <p>With DCSL I have taken on a number of control systems and robotic software related projects:</p>
+                        <p class="card-text">I joined the <strong>Dynamics and Control Systems Laboratory</strong> at Georgia Tech as an Undergraduate Research Assistant (URA) in Fall 2024. The lab focuses on testing <strong>robotic perception and control systems</strong> in simulated space-like environments. My work spans <strong>robotics perception, control, state estimation, and hardware integration</strong>. Additionally, through DCSL, I have had the opportunity to teach and support incoming URAs.</p>
+                        <h6>Research Contributions</h6>
                         <ul>
-                            <li>Integration of the new IMU into the existing Kalman filter</li>
-                            <li>Integration of a SLAM pipeline into the ROS2 framework</li>
-                            <li>Use of signal processing, regression and rotational dynamics to experimentally derive IMU frame transformations</li>
+                            <li><strong>Multi-agent SLAM for satellite constellations:</strong> Developing collaborative SLAM software for satellite constellations.</li>
+                                <ul>
+                                    <li>Preparing a publication (targeting November).</li>
+                                </ul>
                         </ul>
-                        <p>I have also taken on many projects relating to electronics development and integration:</p>
+                        <h6>Controls / Software:</h6>
                         <ul>
-                            <li>Integration of a new digital IMU with UART communication</li>
-                            <li>Debugging power converters to supply power from a battery to a Raspberry Pi</li>
-                            <li>Integration and firmware for a board to control solenoid thrusters with PWM</li>
-                            <li>Troubleshooting and testing electronic subsystems in simulated environments</li>
+                            <li>Integrated a digital IMU into the COSMOS2 EKF <strong>(Extended Kalman Filter)</strong>, achieving:
+                                <ul>
+                                    <li>5× faster sampling rate</li>
+                                    <li>5× higher prediction frequency in the Kalman filter</li>
+                                </ul>
+                            </li>
+                            <li>Estimated IMU alignment using <strong>signal processing, rotational dynamics, and regression algorithms.</strong></li>
+                                <ul>
+                                    <li>Experimental estimation of frame transformations from sensor data.</li>
+                                </ul>
+                            <li>Development of a <strong>robotic control system in the ROS2 framework.</strong></li>
+                        </ul>
+                        <h6>Hardware / Firmware:</h6>
+                        <ul>
+                            <li>Diagnosed and fixed electrical errors on the COSMOS2 Robot</li>
+                                <ul>
+                                    <li>Fixed a power regulation PCB (Printed Circuit Board) utilizing a <strong>buck converter</strong> to supply power to a Raspberry Pi</li>
+                                    <li>Built firmware for a thruster control board that uses <strong></strong>PWM</strong> to control solenoid thrusters.</li>
+                                    <li>Developed software to poll data from a digital IMU using a <strong>UART</strong> connection.</li>
+                                    <li>Diagnosed a communication error resulting from improperly matched <strong>I2C</strong> lines.</li>
+                                </ul>
+                            <li>Designed and manufactured wiring harnesses to connect the Thruster Control Board to the Solenoid Control Boards.</li>
+                            <li>Conducted pressurized tests of the COSMOS2 robot.</li>
+                            <li>Debugged and repaired the COSMOS2 pneumatic flotation system.</li>
                         </ul>
                     </div>
                 </div>
